@@ -7,6 +7,12 @@
     <title>Document</title>
     <link href="Styles/styles.css" rel="stylesheet">
 </head>
+
+<!--
+    The navigation bar is inside a larger wrapper for manipulation of the navigation bar placement vertically.
+    The inner Wrapper is the basis for horizontal alignment of the initial Logo image inside a link, and the 
+        the div containing the second link element and button to provide alignment to the right of the nav bar
+-->
 <body>
     <section id="navigationBar">
         <header>
@@ -28,12 +34,88 @@
 
     </section>
 
+    <!--
+        This sections is the layout for the hero image that is the first main content presented to the user on the page.
+    -->
+
     <section id="mainContentWrapper">
-        <div id="mainContentFirstWrapper">
-            <div id="mainContentFirstLeftWrapper">
-                <h1></h1>
+        <div id="heroImageLeftColumn">
+            <div id="heroHeadertext">
+                <p  class="plainText" id="heroHeaderOne">Functional Music to Improve</p>
+                <h1 class="plainText" id="heroHeaderTwo" >Focus in 15 Minutes</h1>
+            </div>
+            <div id="heroBodyText">
+                <p id="heroSubText" class="subText">
+                    Our science-first approach creates music that sounds different-and affects your brain differently-than any other music.
+                </p>
+
+                
+
+                <div>
+                    <p id="cloutImageHeader" class="subText">FEATURED IN</p>
+                    <img src="images/clout.png" att="we are the best">
+                    
+                </div>
+
+                <input type="button" class="orangeButtons" id="tryFreeButton" value="Try 5 free sessions" >
 
             </div>
+
+        </div>
+
+        <div id="heroImageRightColumn">
+            <img id="heroImage"src="images/picture-1.gif">
+        </div>
+
+    </section>
+
+    <p class="plainText" id="contentBreakPoint">
+        Wanna see the science?
+    </p>
+
+    <section id="secondaryContentWrapper">
+
+        <div id="secondaryLeftColumn">
+            <img src="images/picture-2.gif">
+            <h2 class="plainText">
+                Patented Technology
+            </h2>
+
+            <p class="plainText">
+                Brain.fm holds patents on key processes for creating functional music, including technology 
+                to elicit strong nueral phase locking- allowing populations of neurons to engage in varius kinds 
+                of coordinated activity-and technology to remove distraction in sound.
+            </p>
+
+            <p class="plainText">
+                This makes our music unique, purpose-built to steer you into a desired mental state. In other words, 
+                we've found new ways to create music that helps you do what you need to do.
+            </p>
+            <a href=" " target="_blank" class="plainText">
+                Explore More of Our Science
+            </a>
+
+        </div>
+
+        <div id="secondaryRightColumn">
+            <img src="images/picture-3.png">
+            <h2 class="plainText">
+                Tested on Brain and Behavior
+            </h2>
+
+            <p class="plainText">
+                Scientists at Brain.fm work with collaberators at academic institutions to run experiments.
+            </p>
+
+            <p class="plainText">
+                We look at the effects of out technology on the brain, using FMRI and EEG, and also run large-scale 
+                behavorial tests, measuring performance on simple games.
+            </p>
+
+            <p class="plainText">
+                Our experiments always include a control condition ('placebo') of the same underlying music without 
+                Brain.fm technology applied, se we can be sure our tech is what makes the difference.
+            </p>
 
         </div>
 
