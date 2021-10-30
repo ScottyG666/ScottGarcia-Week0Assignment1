@@ -23,6 +23,14 @@ html, body{
     color:var(--subText);
 }
 
+.columnText{
+    text-align: left;
+}
+
+/columnSubText{
+    font-size:30px;
+}
+
 /*below this is the styling for the navigation bar 
 */
 header{
@@ -86,7 +94,7 @@ header{
 */
 
 #mainContentWrapper {
-    width: 100%;
+    width: 100vw;
     padding:200px 50px 120px 50px;
     border: 1px solid blueviolet;
     display:flex;
@@ -106,8 +114,8 @@ header{
 
 #heroHeaderOne{
     font-size: 30px;
-    border: 1px solid olivedrab;
     padding: 75px 0px 0px 0px;
+    margin:0px;
 
     /*i need to find a way to make the weight of the font thinner
     font-weight: ;
@@ -118,13 +126,12 @@ header{
     font-size: 30px;
     margin:0px;
     padding:0px;
-    border:1px dashed lime;
 }
 
 
 
 #heroSubText{
-    font-size: 30px;
+    font-size: 18px;
 }
 
 
@@ -159,10 +166,40 @@ header{
 }
 
 #secondaryContentWrapper{
-    width:100vw;
     text-align: center;
-    margin: auto;
     display:flex;
     flex: row;
     border: 1px solid pink;
+}
+
+#secondaryLeftColumn{
+    width:500px;
+    margin: 0px 10px 0px 50px;
+    padding: 0px 100px 0px 100px;
+    align-items: flex-start;
+
+
+}
+
+#secondaryRightColumn{
+    width:500px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#imagesFirst{
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+#imagesSecond{
+    margin-bottom: 60px;
+    margin-top: 28px;
+    text-align: center;
+}
+
+#leftColumnLink{
+    display: flex;
+    align-items:flex-start;
 }
