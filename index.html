@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Brain.fm Clone</title>
     <link href="Styles/styles.css" rel="stylesheet">
 </head>
 
@@ -13,117 +13,96 @@
     The inner Wrapper is the basis for horizontal alignment of the initial Logo image inside a link, and the 
         the div containing the second link element and button to provide alignment to the right of the nav bar
 -->
+
 <body>
-    <section id="navigationBar">
-        <header>
+    <div class="publicWrapper">
+        <div id="navigationBar">
             <div id="innerNavBarWrapper">
                     <a>
                         <img src="images/logo.png">
                     </a>
                 <div id="navBarRightWrapper">
-                    
+                        
                     <a href=" " target="_blank">Sign In</a>
-                    
-                    
-                    <input type="button" class="orangeButtons" value="Try for free" >
-                    
+                        
+                        
+                    <input type="button" id="tryFreeButton" class="orangeButtons" value="Try for free" >
+                        
                 </div>
 
             </div>
-        </header>
 
-    </section>
-
-    <!--
-        This sections is the layout for the hero image that is the first main content presented to the user on the page.
-    -->
-
-    <section id="mainContentWrapper">
-        <div id="heroImageLeftColumn">
-            <div id="heroHeadertext">
-                <p  class="plainText" id="heroHeaderOne">Functional Music to Improve</p>
-                <h1 class="plainText" id="heroHeaderTwo" >Focus in 15 Minutes</h1>
-            </div>
-            <div id="heroBodyText">
-                <p id="heroSubText" class="subText">
-                    Our science-first approach creates music that sounds different-and affects your brain differently-than any other music.
-                </p>
-
-                
-
-                <div>
-                    <p id="cloutImageHeader" class="subText">FEATURED IN</p>
-                    <img src="images/clout.png" att="we are the best">
-                    
+        </div>
+        <!--
+            This divs is the layout for the hero image that is the first main content presented to the user on the page.
+        -->
+        <div class="innerMainContentWrapper">
+                <div class="innerPagesWrapper">
+                    <div id="heroImageLeftColumn">
+                        <div id="heroHeaderText">
+                            <p  class="plainText" id="heroHeaderOne">Functional Music to Improve</p>
+                            <h1 class="plainText" id="heroHeaderTwo" >Focus in 5 Minutes</h1>
+                        </div>
+                        <div id="heroBodyText">
+                            <p id="heroSubText" class="subText">
+                                Our science-first approach creates music that sounds different-and affects your brain differently-than any other music.
+                            </p>
+                            <div id="cloutImageWrapper">
+                                <div>
+                                <p id="cloutImageHeader" class="subText">FEATURED IN</p>
+                            </div>
+                                <img id="cloutImage" src="images/clout.png" att="we are the best">
+                            </div>
+                            <input type="button" class="orangeButtons" id="fiveSessionsButton" value="Try 5 free sessions" >
+                        </div>
+                    </div>
+                    <div id="heroImageRightColumn">
+                        <img id="heroImage"src="images/picture-1.gif">
+                    </div>
                 </div>
-
-                <input type="button" class="orangeButtons" id="tryFreeButton" value="Try 5 free sessions" >
-
+            <p class="plainText" id="contentBreakPoint">
+                Wanna see the science?
+            </p>
+            <div id="secondaryContentInnerWrapper">
+                <div id="secondaryLeftColumn">
+                    <img id="imagesFirst" src="images/picture-2.gif">
+                    <h2 class="plainText columnText lowerSubText" id="lowerLeftHeader">
+                            <b>Patented Technology</b>
+                    </h2>
+                    <p class="plainText columnText  lowerSubText">
+                            Brain.fm holds patents on key processes for creating functional music, including technology 
+                            to elicit <b>strong nueral phase locking</b>- allowing populations of neurons to engage in varius kinds 
+                            of coordinated activity-and technology to remove distraction in sound.
+                    </p>
+                    <p class="plainText columnText  lowerSubText">
+                            This makes our music unique, purpose-built to steer you into a desired mental state. In other words, 
+                            we've found new ways to create music that helps you do what you need to do.
+                    </p>
+                    <a href=" " id="leftColumnLink" target="_blank" class="plainText columnText  lowerLinkText">
+                            <b>Explore More of Our Science</b>
+                    </a>
+                </div>
+                <div id="secondaryRightColumn">
+                    <img id="imagesSecond" src="images/picture-3.png">
+                    <h2 class="plainText columnText lowerSubText">
+                           <b> Tested on Brain and Behavior</b>
+                    </h2>
+                    <p class="plainText columnText  lowerSubText">
+                            Scientists at Brain.fm work with collaberators at academic institutions to run experiments.
+                    </p>
+                    <p class="plainText columnText  lowerSubText">
+                            We look at the effects of out technology on the brain, using fMRI and EEG, and also run large-scale 
+                            behavorial tests, measuring performance on simple games.
+                    </p>
+                    <p class="plainText columnText  lowerSubText">
+                            <b>Our experiments always include a control condition ('placebo')</b> of the same underlying music without 
+                            Brain.fm technology applied, se we can be sure our tech is what makes the difference.
+                    </p>
+                    <a href=" " target="_blank" class="plainText columnText lowerLinkText">Visit the science page to see out latest results.</a>
+                </div>
             </div>
-
+            <p id="whatArePeopleSaying" class="subText columnSubText">What are people saying?</p>
         </div>
-
-        <div id="heroImageRightColumn">
-            <img id="heroImage"src="images/picture-1.gif">
-        </div>
-
-    </section>
-
-    <p class="plainText" id="contentBreakPoint">
-        Wanna see the science?
-    </p>
-
-    <section id="secondaryContentWrapper">
-
-        <div id="secondaryLeftColumn">
-            <img id="imagesFirst" src="images/picture-2.gif">
-            <h2 class="plainText columnText">
-                Patented Technology
-            </h2>
-
-            <p class="plainText columnText columnSubText">
-                Brain.fm holds patents on key processes for creating functional music, including technology 
-                to elicit strong nueral phase locking- allowing populations of neurons to engage in varius kinds 
-                of coordinated activity-and technology to remove distraction in sound.
-            </p>
-
-            <p class="plainText columnText columnSubText">
-                This makes our music unique, purpose-built to steer you into a desired mental state. In other words, 
-                we've found new ways to create music that helps you do what you need to do.
-            </p>
-            <a href=" " id="leftColumnLink" target="_blank" class="plainText columnText columnSubText">
-                Explore More of Our Science
-            </a>
-
-        </div>
-
-        <div id="secondaryRightColumn">
-            <img id="imagesSecond" src="images/picture-3.png">
-            <h2 class="plainText columnText">
-                Tested on Brain and Behavior
-            </h2>
-
-            <p class="plainText columnText columnSubText">
-                Scientists at Brain.fm work with collaberators at academic institutions to run experiments.
-            </p>
-
-            <p class="plainText columnText columnSubText">
-                We look at the effects of out technology on the brain, using FMRI and EEG, and also run large-scale 
-                behavorial tests, measuring performance on simple games.
-            </p>
-
-            <p class="plainText columnText columnSubText">
-                Our experiments always include a control condition ('placebo') of the same underlying music without 
-                Brain.fm technology applied, se we can be sure our tech is what makes the difference.
-            </p>
-
-        </div>
-
-    </section>
-
-
-
-
-    
+    </div>
 </body>
 </html>
