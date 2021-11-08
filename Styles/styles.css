@@ -244,6 +244,11 @@ and this is the rest of the content asked to be shown on the page
     align-items:flex-start;
 }
 
+/*
+this i added just so there was some content underneath the columns 
+to be more visually pleasing to me.
+*/
+
 #whatArePeopleSaying{
     text-align: center;
     font-size: 20px;
